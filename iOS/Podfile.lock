@@ -24,21 +24,23 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
-  - SIOSocket (0.2.0)
+  - Socket.IO-Client-Swift (8.2.0)
   - UIAlertView+Blocks (0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6)
   - JSONModel (~> 1.1)
   - SDWebImage (~> 3.7)
-  - SIOSocket (~> 0.2.0)
+  - Socket.IO-Client-Swift
   - UIAlertView+Blocks (~> 0.9)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
-  SIOSocket: 2facc0bd02ae72d98c223634a46dd8ebdf9be321
+  Socket.IO-Client-Swift: 900cf511777045c80d1ce1f11f71261e87765dd1
   UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 311142f857707356788f0807484eb9e255f584fd
+
+COCOAPODS: 1.1.1

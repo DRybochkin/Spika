@@ -41,7 +41,7 @@
     NSMutableString *randomString = [NSMutableString stringWithCapacity: length];
     
     for (int i=0; i<length; i++) {
-        [randomString appendFormat: @"%C", [AB characterAtIndex: arc4random_uniform([AB length])]];
+        [randomString appendFormat: @"%C", [AB characterAtIndex: arc4random_uniform((unsigned int)[AB length])]];
     }
     
     return randomString;

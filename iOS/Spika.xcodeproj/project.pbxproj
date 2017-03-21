@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D569D6E8A953855C1A144D26 /* libPods-Spika.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C62E42FCD44B11CC55F8816 /* libPods-Spika.a */; };
+		4E2491951E3B6249003CB2C2 /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2491941E3B6249003CB2C2 /* SIOSocket.m */; };
+		C0725F5851DD39DE40517A81 /* Pods_Spika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57A4FA698AA5A476146B913 /* Pods_Spika.framework */; };
 		EA4724D61C47E58300D7B8D4 /* CSTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4724D51C47E58300D7B8D4 /* CSTitleView.m */; };
 		EA4AB2701CAA8CE300A4EEDE /* CSRecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AB26E1CAA8CE300A4EEDE /* CSRecordAudioViewController.m */; };
 		EA4AB2711CAA8CE300A4EEDE /* CSRecordAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4AB26F1CAA8CE300A4EEDE /* CSRecordAudioViewController.xib */; };
@@ -116,8 +117,9 @@
 
 /* Begin PBXFileReference section */
 		1E24982593672E2BE1DCF485 /* Pods-Spika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spika.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spika/Pods-Spika.release.xcconfig"; sourceTree = "<group>"; };
+		4E2491931E3B6249003CB2C2 /* SIOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOSocket.h; sourceTree = "<group>"; };
+		4E2491941E3B6249003CB2C2 /* SIOSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOSocket.m; sourceTree = "<group>"; };
 		61CC48AE25EC9843EE5AEC4A /* Pods-Spika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spika.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spika/Pods-Spika.debug.xcconfig"; sourceTree = "<group>"; };
-		8C62E42FCD44B11CC55F8816 /* libPods-Spika.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spika.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4724D41C47E58300D7B8D4 /* CSTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTitleView.h; sourceTree = "<group>"; };
 		EA4724D51C47E58300D7B8D4 /* CSTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTitleView.m; sourceTree = "<group>"; };
 		EA4AB26D1CAA8CE300A4EEDE /* CSRecordAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRecordAudioViewController.h; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 		EAF767ED1C4FB7F700EB126E /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/CSChatErrorCodes.strings; sourceTree = "<group>"; };
 		EAF767F11C4FD6B900EB126E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CSChatLocalization.strings; sourceTree = "<group>"; };
 		EAF767F31C4FD6BB00EB126E /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/CSChatLocalization.strings; sourceTree = "<group>"; };
+		F57A4FA698AA5A476146B913 /* Pods_Spika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,7 +306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D569D6E8A953855C1A144D26 /* libPods-Spika.a in Frameworks */,
+				C0725F5851DD39DE40517A81 /* Pods_Spika.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,9 +316,18 @@
 		0C0F54BAD9619C61885D1A59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C62E42FCD44B11CC55F8816 /* libPods-Spika.a */,
+				F57A4FA698AA5A476146B913 /* Pods_Spika.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E2491921E3B6249003CB2C2 /* Sockets */ = {
+			isa = PBXGroup;
+			children = (
+				4E2491931E3B6249003CB2C2 /* SIOSocket.h */,
+				4E2491941E3B6249003CB2C2 /* SIOSocket.m */,
+			);
+			path = Sockets;
 			sourceTree = "<group>";
 		};
 		EA4724D01C47E53500D7B8D4 /* TitleView */ = {
@@ -412,6 +424,7 @@
 			children = (
 				EAF767E61C4FAEFB00EB126E /* Resources */,
 				EAC6BF321C172A330038CCB6 /* Images.xcassets */,
+				4E2491921E3B6249003CB2C2 /* Sockets */,
 				EAC6BEC81C171C240038CCB6 /* Cells */,
 				EAC6BEB61C1719010038CCB6 /* Views */,
 				EAC6BE631C170D3A0038CCB6 /* JSONModel */,
@@ -886,12 +899,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAC6BE3D1C16F8460038CCB6 /* Build configuration list for PBXNativeTarget "Spika" */;
 			buildPhases = (
-				3C82CE8035ABA151542852EE /* Check Pods Manifest.lock */,
+				3C82CE8035ABA151542852EE /* [CP] Check Pods Manifest.lock */,
 				EAC6BE221C16F8460038CCB6 /* Sources */,
 				EAC6BE231C16F8460038CCB6 /* Frameworks */,
 				EAC6BE241C16F8460038CCB6 /* Resources */,
-				6C3A564813E40520BF1DD41B /* Embed Pods Frameworks */,
-				DF07FAA5E18ACC26CB134E42 /* Copy Pods Resources */,
+				6C3A564813E40520BF1DD41B /* [CP] Embed Pods Frameworks */,
+				DF07FAA5E18ACC26CB134E42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -909,7 +922,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CS;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Clover Studio";
 				TargetAttributes = {
 					EAC6BE251C16F8460038CCB6 = {
@@ -986,29 +999,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3C82CE8035ABA151542852EE /* Check Pods Manifest.lock */ = {
+		3C82CE8035ABA151542852EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6C3A564813E40520BF1DD41B /* Embed Pods Frameworks */ = {
+		6C3A564813E40520BF1DD41B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1016,14 +1029,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spika/Pods-Spika-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF07FAA5E18ACC26CB134E42 /* Copy Pods Resources */ = {
+		DF07FAA5E18ACC26CB134E42 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1062,6 +1075,7 @@
 				EAEA8AC21CA2B4BB00E849E6 /* CSStickerView.m in Sources */,
 				EAC6BEB21C17186F0038CCB6 /* CSUploadVideoPreviewViewController.m in Sources */,
 				EAC6BED91C171D770038CCB6 /* CSSeenByTableViewCell.m in Sources */,
+				4E2491951E3B6249003CB2C2 /* SIOSocket.m in Sources */,
 				EABB0BC51CA3F26800FE7350 /* CSStickerCategoryCollectionViewCell.m in Sources */,
 				EAEA8ABE1CA2A69B00E849E6 /* CSApiManager.m in Sources */,
 				EAC6BF2D1C1725400038CCB6 /* CSAudioPreviewView.m in Sources */,
@@ -1151,6 +1165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1160,8 +1175,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Ken Yasue (WD4936TY3H)";
@@ -1195,6 +1212,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1204,8 +1222,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1233,6 +1253,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61CC48AE25EC9843EE5AEC4A /* Pods-Spika.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mislav Bagovic (96YEKUB6MR)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mislav Bagovic (96YEKUB6MR)";
@@ -1250,6 +1271,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E24982593672E2BE1DCF485 /* Pods-Spika.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mislav Bagovic (96YEKUB6MR)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mislav Bagovic (96YEKUB6MR)";

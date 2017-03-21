@@ -67,7 +67,7 @@
     self.firstButtonsView.hidden = YES;
     self.secondButtonsView.hidden = NO;
     
-    NSString* sizeString = [NSString stringWithFormat:@"%d", _videoData.length];
+    NSString* sizeString = [NSString stringWithFormat:@"%lu", (unsigned long)_videoData.length];
     [self.okButton setTitle:[NSString stringWithFormat:@"Ok, %@", [CSUtils readableFileSize:sizeString]] forState:UIControlStateNormal];
 }
 

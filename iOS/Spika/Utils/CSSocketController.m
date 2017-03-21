@@ -93,9 +93,8 @@
     void (^block)(void) = ^{
         NSLog(@"registerForChat block execute after connection");
         
-        NSArray *array = [NSArray arrayWithObject:parametersLogin];
-        
-        [self.socket emit:kAppSocketLogin args:array];
+        NSArray *array = [NSArray arrayWithObject: parametersLogin];
+        [self.socket emit: kAppSocketLogin args: array];
         
         [self.socket on:kAppSocketNewMessage callback:^(SIOParameterArray *args){
             
