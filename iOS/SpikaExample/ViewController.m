@@ -30,12 +30,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //[CSCustomConfig sharedInstance].server_url = @"http://192.168.20.100:5000/spika/v1/";
+    //[CSCustomConfig sharedInstance].socket_url = @"ws://192.168.20.100:5000/spika/spika";
+    [CSCustomConfig sharedInstance].server_url = @"http://test.appercode.com/v1/test1/spika/v1/";
+    [CSCustomConfig sharedInstance].socket_url = @"ws://test.appercode.com/v1/test1/spika/spika";
+    
     self.serverTextField.text = [CSCustomConfig sharedInstance].server_url;
     self.socketTextField.text = [CSCustomConfig sharedInstance].socket_url;
     
     self.userIdTextField.text = [[UIDevice currentDevice] name];
     self.usernameTextField.text = [[UIDevice currentDevice] name];
-    self.avatarUrlTextField.text = @"http://ossdemo.spika.chat/spika/img/avatar.jpg";
+    self.avatarUrlTextField.text = @"";
     self.roomTextField.text = @"default";
     
     self.serverTextField.enabled = NO;

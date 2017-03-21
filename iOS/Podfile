@@ -1,16 +1,17 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
-use_frameworks!
+#use_frameworks!
 
 target 'Spika' do
 
-pod 'AFNetworking', '~> 2.6'
-pod 'JSONModel', '~> 1.1'
+pod 'AFNetworking'
+pod 'JSONModel'
 #pod 'SIOSocket', '~> 0.2.0'
-pod 'Socket.IO-Client-Swift'
-pod 'SDWebImage', '~> 3.7'
-pod 'UIAlertView+Blocks', '~> 0.9'
+#pod 'Socket.IO-Client-Swift'
+pod 'SocketRocket', :git => 'https://github.com/facebook/SocketRocket.git'
+pod 'SDWebImage'
+pod 'UIAlertView+Blocks'
 
 end
 

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E2491951E3B6249003CB2C2 /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2491941E3B6249003CB2C2 /* SIOSocket.m */; };
-		C0725F5851DD39DE40517A81 /* Pods_Spika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57A4FA698AA5A476146B913 /* Pods_Spika.framework */; };
+		4E24919E1E40C64B003CB2C2 /* SocketEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24919D1E40C64B003CB2C2 /* SocketEventHandler.m */; };
+		92B47F5DEC2BBC71507C65FE /* libPods-Spika.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C145BA77E86AC088D4ED7C /* libPods-Spika.a */; };
 		EA4724D61C47E58300D7B8D4 /* CSTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4724D51C47E58300D7B8D4 /* CSTitleView.m */; };
 		EA4AB2701CAA8CE300A4EEDE /* CSRecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AB26E1CAA8CE300A4EEDE /* CSRecordAudioViewController.m */; };
 		EA4AB2711CAA8CE300A4EEDE /* CSRecordAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4AB26F1CAA8CE300A4EEDE /* CSRecordAudioViewController.xib */; };
@@ -116,9 +117,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06C145BA77E86AC088D4ED7C /* libPods-Spika.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spika.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E24982593672E2BE1DCF485 /* Pods-Spika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spika.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spika/Pods-Spika.release.xcconfig"; sourceTree = "<group>"; };
 		4E2491931E3B6249003CB2C2 /* SIOSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIOSocket.h; sourceTree = "<group>"; };
 		4E2491941E3B6249003CB2C2 /* SIOSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIOSocket.m; sourceTree = "<group>"; };
+		4E24919C1E40C64B003CB2C2 /* SocketEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketEventHandler.h; sourceTree = "<group>"; };
+		4E24919D1E40C64B003CB2C2 /* SocketEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketEventHandler.m; sourceTree = "<group>"; };
 		61CC48AE25EC9843EE5AEC4A /* Pods-Spika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spika.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spika/Pods-Spika.debug.xcconfig"; sourceTree = "<group>"; };
 		EA4724D41C47E58300D7B8D4 /* CSTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTitleView.h; sourceTree = "<group>"; };
 		EA4724D51C47E58300D7B8D4 /* CSTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTitleView.m; sourceTree = "<group>"; };
@@ -298,7 +302,6 @@
 		EAF767ED1C4FB7F700EB126E /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/CSChatErrorCodes.strings; sourceTree = "<group>"; };
 		EAF767F11C4FD6B900EB126E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CSChatLocalization.strings; sourceTree = "<group>"; };
 		EAF767F31C4FD6BB00EB126E /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/CSChatLocalization.strings; sourceTree = "<group>"; };
-		F57A4FA698AA5A476146B913 /* Pods_Spika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,7 +309,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0725F5851DD39DE40517A81 /* Pods_Spika.framework in Frameworks */,
+				92B47F5DEC2BBC71507C65FE /* libPods-Spika.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +319,7 @@
 		0C0F54BAD9619C61885D1A59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F57A4FA698AA5A476146B913 /* Pods_Spika.framework */,
+				06C145BA77E86AC088D4ED7C /* libPods-Spika.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -326,6 +329,8 @@
 			children = (
 				4E2491931E3B6249003CB2C2 /* SIOSocket.h */,
 				4E2491941E3B6249003CB2C2 /* SIOSocket.m */,
+				4E24919C1E40C64B003CB2C2 /* SocketEventHandler.h */,
+				4E24919D1E40C64B003CB2C2 /* SocketEventHandler.m */,
 			);
 			path = Sockets;
 			sourceTree = "<group>";
@@ -1095,6 +1100,7 @@
 				EAC6BECD1C171C4D0038CCB6 /* CSUsersTableViewCell.m in Sources */,
 				EAC6BF141C1724090038CCB6 /* CSImagePreviewView.m in Sources */,
 				EABB0BCF1CA3FC5300FE7350 /* CSMyStickerMessageCell.m in Sources */,
+				4E24919E1E40C64B003CB2C2 /* SocketEventHandler.m in Sources */,
 				EAC6BEC71C171B4C0038CCB6 /* CSUploadManager.m in Sources */,
 				EAC6BF311C1725C00038CCB6 /* CSEmitJsonCreator.m in Sources */,
 				EA4AB2761CAA8D0600A4EEDE /* SE2AudioPlayerView.m in Sources */,
