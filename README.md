@@ -1,3 +1,6 @@
+В проекте два бранча master - использует SocketIO (https://github.com/socketio/socket.io-client-swift), SocketRocket - использует SocketRocket (https://github.com/facebook/SocketRocket)
+Исправлены мелкие баги остальное без изменений (по крайней мере мне хочется в это верить)
+
 # Spika
 
 Spika is messenger module for Web/iOS/Android with backend. 
